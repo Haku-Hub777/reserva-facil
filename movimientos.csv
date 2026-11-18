@@ -1,0 +1,19 @@
+fecha_bogota,sprint,tarjeta,evento,detalle
+2026-11-17T23:08:05-05:00,1,HU-01,creada,Consulta de disponibilidad
+2026-11-17T23:08:05-05:00,1,HU-02,creada,Registro con validación de cruces
+2026-11-17T23:08:05-05:00,2,HU-03,creada,Lista y búsqueda por huésped o identificador
+2026-11-17T23:08:05-05:00,2,HU-04,creada,Cancelación y liberación de disponibilidad
+2026-11-17T23:08:05-05:00,1,-,inicio,"Compromiso de HU-01 y HU-02, 5 puntos"
+2026-11-17T23:08:05-05:00,1,HU-01,en_progreso,Implementar intervalos y consulta
+2026-11-17T23:09:48-05:00,1,HU-02,en_progreso,Preparar integración de alta mientras HU-01 sigue en verificación
+2026-11-17T23:09:48-05:00,1,HU-01,terminada,d1975df CP-01 y CP-06 aprobados; comprobación visual prevista en el cierre
+2026-11-17T23:13:36-05:00,1,HU-02,terminada,012e71f CP-02 a CP-05 aprobados; verificación HTTP y sintaxis de interfaz aprobadas
+2026-11-17T23:13:36-05:00,1,-,cierre,5 de 5 puntos; 6 casos de alcance y 1 caso concurrente aprobados; primer corte estático
+2026-11-17T23:13:36-05:00,1,-,retrospectiva,R1: limitar WIP e incorporar prueba individual ligada al cierre
+2026-11-17T23:13:36-05:00,2,-,inicio,"Compromiso de HU-03 y HU-04, 5 puntos; se aplican M1 y M2"
+2026-11-17T23:13:36-05:00,2,HU-03,en_progreso,Implementar lista y búsqueda de reservas
+2026-11-17T23:14:23-05:00,2,HU-03,terminada,13308e2 CP-07 aprobado; evidencia individual HU-03_prueba.txt
+2026-11-17T23:14:23-05:00,2,HU-04,en_progreso,Implementar cancelación después de cerrar HU-03
+2026-11-17T23:15:22-05:00,2,HU-04,terminada,5e98898 CP-08 aprobado; evidencia individual HU-04_prueba.txt
+2026-11-17T23:15:23-05:00,2,-,cierre,5 de 5 puntos; 8 casos de alcance y 1 caso concurrente aprobados
+2026-11-17T23:15:23-05:00,2,-,retrospectiva,R2: WIP máximo 1; 2 de 2 pruebas de historia archivadas con sus commits

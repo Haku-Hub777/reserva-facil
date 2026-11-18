@@ -1,0 +1,10 @@
+caso,historia,tecnica,escenario,resultado_esperado,resultado_observado,estado
+CP-01,HU-01,Partición de equivalencia,Consultar 11–12 dic 2026 con 101 ocupada del 10 al 13,Solo 102 y 103,HTTP 200 con 102 y 103,Aprobado
+CP-02,HU-02,Partición de equivalencia,Reservar 102 del 11 al 12 para Andrea Prueba,Se guarda reserva activa,HTTP 201 con reserva 2 y registro en SQLite,Aprobado
+CP-03,HU-02,Tabla de decisiones,Reservar 101 del 12 al 14,Rechaza cruce parcial,HTTP 409 y se conserva un solo registro,Aprobado
+CP-04,HU-02,Tabla de decisiones,Reservar 101 del 10 al 13,Rechaza fechas idénticas,HTTP 409 y se conserva un solo registro,Aprobado
+CP-05,HU-02,Análisis de valores límite,Reservar 101 del 13 al 14,Acepta entrada en la fecha de salida anterior,HTTP 201 y quedan dos registros,Aprobado
+CP-06,HU-01,Análisis de valores límite,Consultar con entrada y salida el 13,Rechaza fechas iguales,HTTP 400 con mensaje sobre la salida,Aprobado
+CP-07,HU-03,Partición de equivalencia,Consultar el listado con la reserva de demostración,Devuelve identificador y estado,HTTP 200 con la reserva 1 activa,Aprobado
+CP-08,HU-04,Transición de estados,Cancelar la reserva 1 y repetir la operación,Conserva historial y devuelve disponibilidad,HTTP 200 en ambos intentos y 101 vuelve a aparecer,Aprobado
+EXT-01,HU-02,Concurrencia,Enviar dos solicitudes simultáneas sobre la habitación 103,Se guarda una sola reserva,Una solicitud obtuvo HTTP 201 y la otra HTTP 409,Aprobado
